@@ -6,3 +6,5 @@
 	smudge = git-media-smudge %f
 [core]
 	editor = /usr/bin/vim
+[credential]
+	helper = osxkeychain

@@ -1,1 +1,8 @@
-.gitconfig
+[user]
+	name = Calvin Lai
+	email = callai@gmail.com
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[core]
+	editor = /usr/bin/vim

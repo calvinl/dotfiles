@@ -1,0 +1,56 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+
+html, body, .tree-view, .tab-bar .tab {
+  font-size: 12px;
+}
+
+.editor {
+  font-size: 13px;
+}
+
+.editor .cursor {
+
+}
+
+.editor-colors {
+  background-color: #222;
+}
+
+// tweak seti theme's tree-view
+.tree-view {
+  font-family: '.SFNSText-Regular'; // san francisco font
+  font-size: 11px;
+  .name.icon.icon-file-directory {
+    font-weight: normal;
+  }
+}
+
+atom-text-editor.vim-mode.normal-mode,
+atom-text-editor.vim-mode.operator-pending-mode,
+atom-text-editor.vim-mode.visual-mode
+{
+  &, // only keep this if you want to see the cursor on non-focused tabs
+  &.is-focused {
+    &::shadow, // shadow-DOM enabled
+    &          // shadow-DOM disabled
+    {
+      /* cursor color */
+      .cursor {
+        // cursor styles
+        background-color: #F00;
+      }
+      .blink-off .cursor {
+        // cursor style while blinking (if you so desire)
+      }
+    }
+  }
+}

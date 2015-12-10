@@ -1,0 +1,27 @@
+"*":
+  editor:
+    invisibles: {}
+    fontFamily: "Consolas"
+    showIndentGuide: true
+    fontSize: 20
+  core:
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  "exception-reporting":
+    userId: "06e61597-ff4b-bc9a-0b8e-8c526c4c752b"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "ad77c2ce71c34de351cab028e9a814e52f96956d"
+  "markdown-preview": {}
+  "vim-mode": {}
+  "tree-view":
+    showOnRightSide: true
+  "language-babel":
+    suppressTranspileOnSaveMessages: true
+  "atom-material-ui":
+    accentColor: "Cyan"
+    slimScrollbar: true
+    panelContrast: true

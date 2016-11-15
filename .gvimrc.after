@@ -1,7 +1,7 @@
 colorscheme Tomorrow-Night
 set transparency=6
 set guioptions=aAce
-set guifont=Consolas:h12
+set guifont="Operator Mono":h11
 syntax on
 filetype on
 au BufNewFile,BufRead *.hjs set filetype=handlebars

@@ -10,27 +10,36 @@
 
 
 html, body, .tree-view, .tab-bar .tab {
+  font-family: 'Operator Mono';
   font-size: 12px;
-}
-
-.editor {
-  font-size: 13px;
-}
-
-.editor .cursor {
-
-}
-
-.editor-colors {
-  background-color: #222;
 }
 
 // tweak seti theme's tree-view
 .tree-view {
-  font-family: '.SFNSText-Regular'; // san francisco font
-  font-size: 11px;
+  font-family: 'Operator Mono';
+  font-size: 13px;
   .name.icon.icon-file-directory {
     font-weight: normal;
+  }
+}
+atom-workspace,
+atom-text-editor,
+.editor {
+  font-family: 'Operator Mono';
+  background: #222;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+atom-panel.tool-panel {
+  font-size: 0.88em;
+}
+.entity.other.attribute-name {
+  font-style: italic;
+}
+atom-text-editor::shadow {
+  .entity.other.attribute-name {
+    font-style: italic;
   }
 }
 
@@ -49,7 +58,8 @@ atom-text-editor.vim-mode.visual-mode
         background-color: #F00;
       }
       .blink-off .cursor {
-        // cursor style while blinking (if you so desire)
+        // cursor style while blinking
+        background-color: transparent;
       }
     }
   }

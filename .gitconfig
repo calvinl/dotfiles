@@ -6,5 +6,10 @@
 	smudge = git-media-smudge %f
 [core]
 	editor = /usr/bin/vim
+	trustctime = false
 [credential]
 	helper = osxkeychain
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f

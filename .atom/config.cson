@@ -1,27 +1,49 @@
 "*":
-  editor:
-    invisibles: {}
-    fontFamily: "Consolas"
-    showIndentGuide: true
-    fontSize: 20
-  core:
-    themes: [
-      "seti-ui"
-      "seti-syntax"
-    ]
-  "exception-reporting":
-    userId: "06e61597-ff4b-bc9a-0b8e-8c526c4c752b"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "ad77c2ce71c34de351cab028e9a814e52f96956d"
-  "markdown-preview": {}
-  "vim-mode": {}
-  "tree-view":
-    showOnRightSide: true
-  "language-babel":
-    suppressTranspileOnSaveMessages: true
   "atom-material-ui":
     accentColor: "Cyan"
-    slimScrollbar: true
     panelContrast: true
+    slimScrollbar: true
+  "atom-react-native-css":
+    compileCSS: false
+  core:
+    allowPendingPaneItems: false
+    disabledPackages: [
+      "activate-power-mode"
+      "atom-react-native-css"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "genesis-ui"
+      "firewatch-syntax"
+    ]
+  editor:
+    fontFamily: "Operator Mono"
+    fontSize: 17
+    invisibles: {}
+    showIndentGuide: true
+  "ex-mode":
+    splitright: true
+  "exception-reporting":
+    userId: "06e61597-ff4b-bc9a-0b8e-8c526c4c752b"
+  "genesis-ui":
+    treeView:
+      toggleHovers: false
+  "language-babel":
+    suppressTranspileOnSaveMessages: true
+  "linter-eslint":
+    disableEslintIgnore: true
+    globalNodePath: "/Users/calvin/.nvm/versions/node/v6.7.0"
+  "markdown-preview":
+    useGitHubStyle: true
+  metrics:
+    userId: "ad77c2ce71c34de351cab028e9a814e52f96956d"
+  "seti-ui":
+    compactView: true
+    disableAnimations: true
+    font: "Default Atom Font"
+    themeColor: "Green"
+  "tree-view":
+    showOnRightSide: true
+  "vim-mode": {}
+  welcome:
+    showOnStartup: false

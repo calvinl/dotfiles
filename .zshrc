@@ -104,6 +104,21 @@ check_nvmrc
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # android sdk installed by homebrew
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_SDK=/usr/local/opt/android-sdk
+export ANDROID_HOME="$ANDROID_SDK"
+export ANDROID_PLATFORM_TOOLS="$ANDROID_SDK/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_PLATFORM_TOOLS:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# docker-machine settings (with dinghy)
+eval $(docker-machine env dinghy)
+
+# convience aliases
+alias pw='~/Development/scripts/password.rb'
+alias ll='ls -la'
+alias dc='docker-compose'
+alias rn='react-native'
+
+export PATH="/usr/local/sbin:$PATH"
+
+# direnv for env vars via .envrc
+eval "$(direnv hook zsh)"

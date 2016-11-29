@@ -18,7 +18,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+# export UPDATE_ZSH_DAYS=2
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -57,13 +57,8 @@ plugins=(git)
 # export PATH="$PATH:/usr/local/heroku/bin:/Users/calvin/.rvm/gems/ruby-2.1.2@wunwun/bin:/Users/calvin/.rvm/gems/ruby-2.1.2@global/bin:/Users/calvin/.rvm/rubies/ruby-2.1.2/bin:/Users/calvin/.nvm/versions/io.js/v2.3.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/calvin/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# NVM
-source ~/.nvm/nvm.sh
-
 # oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-
-# RVM
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -75,39 +70,15 @@ else
   export EDITOR='mvim'
 fi
 
-# chpwd() is run every time the current working dir is changed.
-# use this to detect .nvmrc files
-chpwd_functions+=(check_nvmrc)
-
-function check_nvmrc() {
-  if [ -r $PWD/.nvmrc ]; then
-    nvm use `cat $PWD/.nvmrc`
-  fi
-}
-
-# run once on shell instantiation
-check_nvmrc
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # android sdk installed by homebrew
 export ANDROID_SDK=/usr/local/opt/android-sdk
 export ANDROID_HOME="$ANDROID_SDK"
 export ANDROID_PLATFORM_TOOLS="$ANDROID_SDK/platform-tools"
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_PLATFORM_TOOLS:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="/usr.local/sbin:$PATH:$ANDROID_HOME/tools:$ANDROID_PLATFORM_TOOLS:$HOME/.rvm/bin"
+export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
 # docker-machine settings (with dinghy)
 eval $(docker-machine env dinghy)
@@ -117,8 +88,3 @@ alias pw='~/Development/scripts/password.rb'
 alias ll='ls -la'
 alias dc='docker-compose'
 alias rn='react-native'
-
-export PATH="/usr/local/sbin:$PATH"
-
-# direnv for env vars via .envrc
-eval "$(direnv hook zsh)"

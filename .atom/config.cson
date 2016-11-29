@@ -11,6 +11,7 @@
       "activate-power-mode"
       "atom-react-native-css"
     ]
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     themes: [
       "genesis-ui"
@@ -43,6 +44,7 @@
     font: "Default Atom Font"
     themeColor: "Green"
   "tree-view":
+    hideVcsIgnoredFiles: true
     showOnRightSide: true
   "vim-mode": {}
   welcome:

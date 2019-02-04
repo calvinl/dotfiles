@@ -32,7 +32,6 @@
   "markdown-preview":
     useGitHubStyle: true
   "tree-view":
-    hideVcsIgnoredFiles: true
     showOnRightSide: true
   "vim-mode": {}
   welcome:

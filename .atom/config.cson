@@ -1,21 +1,15 @@
 "*":
-  "atom-material-ui":
-    accentColor: "Cyan"
-    panelContrast: true
-    slimScrollbar: true
-  "atom-react-native-css":
-    compileCSS: false
   core:
     allowPendingPaneItems: false
-    disabledPackages: [
-      "activate-power-mode"
-      "atom-react-native-css"
-    ]
+    customFileTypes:
+      "source.js.jsx": [
+        "js"
+      ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     themes: [
-      "genesis-ui"
-      "firewatch-syntax"
+      "framer-ui"
+      "monokai-shade"
     ]
   editor:
     fontFamily: "Operator Mono"
@@ -25,24 +19,18 @@
   "ex-mode":
     splitright: true
   "exception-reporting":
-    userId: "06e61597-ff4b-bc9a-0b8e-8c526c4c752b"
-  "genesis-ui":
-    treeView:
-      toggleHovers: false
+    userId: "b4658df1-bb5e-470c-84ed-f2ff81f58a74"
   "language-babel":
     suppressTranspileOnSaveMessages: true
   "linter-eslint":
-    disableEslintIgnore: true
-    globalNodePath: "/Users/calvin/.nvm/versions/node/v6.7.0"
+    advanced:
+      disableEslintIgnore: true
+    global:
+      globalNodePath: "/Users/calvin/n/bin/node"
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
-  metrics:
-    userId: "ad77c2ce71c34de351cab028e9a814e52f96956d"
-  "seti-ui":
-    compactView: true
-    disableAnimations: true
-    font: "Default Atom Font"
-    themeColor: "Green"
   "tree-view":
     hideVcsIgnoredFiles: true
     showOnRightSide: true

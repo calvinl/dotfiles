@@ -37,30 +37,8 @@ atom-panel.tool-panel {
 .entity.other.attribute-name {
   font-style: italic;
 }
-atom-text-editor::shadow {
-  .entity.other.attribute-name {
+atom-text-editor.editor {
+  .syntax--entity.syntax--other.syntax--attribute-name {
     font-style: italic;
-  }
-}
-
-atom-text-editor.vim-mode.normal-mode,
-atom-text-editor.vim-mode.operator-pending-mode,
-atom-text-editor.vim-mode.visual-mode
-{
-  &, // only keep this if you want to see the cursor on non-focused tabs
-  &.is-focused {
-    &::shadow, // shadow-DOM enabled
-    &          // shadow-DOM disabled
-    {
-      /* cursor color */
-      .cursor {
-        // cursor styles
-        background-color: #F00;
-      }
-      .blink-off .cursor {
-        // cursor style while blinking
-        background-color: transparent;
-      }
-    }
   }
 }

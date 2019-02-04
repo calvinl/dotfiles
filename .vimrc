@@ -15,3 +15,6 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " Work around FIFO files + NERDTree + Janus bug described:
 " https://github.com/scrooloose/nerdtree/issues/139
 autocmd! AuNERDTreeCmd FocusGained
+
+" map j-k to ESC key
+imap jk <Esc>

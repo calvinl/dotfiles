@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/calvin/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -70,21 +70,9 @@ else
   export EDITOR='mvim'
 fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# android sdk installed by homebrew
-export ANDROID_SDK=/usr/local/opt/android-sdk
-export ANDROID_HOME="$ANDROID_SDK"
-export ANDROID_PLATFORM_TOOLS="$ANDROID_SDK/platform-tools"
-export PATH="/usr.local/sbin:$PATH:$ANDROID_HOME/tools:$ANDROID_PLATFORM_TOOLS:$HOME/.rvm/bin"
-export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
-
-# docker-machine settings (with dinghy)
-eval $(docker-machine env dinghy)
-
 # convience aliases
-alias pw='~/Development/scripts/password.rb'
 alias ll='ls -la'
 alias dc='docker-compose'
 alias rn='react-native'
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).

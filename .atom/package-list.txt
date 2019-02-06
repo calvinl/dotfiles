@@ -1,6 +1,7 @@
+apex-adapt-dark-slim-ui@0.4.2
+atom-dark-ui-slim@0.47.1
 busy-signal@2.0.0
 ex-mode@0.18.0
-framer-ui@2.0.0
 intentions@1.1.5
 language-babel@2.85.0
 linter@2.3.0
@@ -9,5 +10,8 @@ linter-ui-default@1.7.1
 monokai@0.24.0
 monokai-shade@0.4.0
 prettier-atom@0.56.2
+slim-dark-ui@0.12.0
+slime@2.4.0
+tesla-atom@4.0.0
 vim-mode-plus@1.36.0
 

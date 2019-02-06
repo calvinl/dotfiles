@@ -8,8 +8,8 @@
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     themes: [
-      "framer-ui"
-      "monokai-shade"
+      "apex-adapt-dark-slim-ui"
+      "tesla-atom"
     ]
   editor:
     fontFamily: "Operator Mono"
@@ -27,12 +27,16 @@
       disableEslintIgnore: true
     global:
       globalNodePath: "/Users/calvin/n/bin/node"
+    lintHtmlFiles: true
   "linter-ui-default":
     showPanel: true
   "markdown-preview":
     useGitHubStyle: true
+  "slim-dark-ui": {}
   "tree-view":
     showOnRightSide: true
   "vim-mode": {}
   welcome:
     showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false

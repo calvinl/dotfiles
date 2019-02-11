@@ -1,6 +1,7 @@
 apex-adapt-dark-slim-ui@0.4.2
 atom-dark-ui-slim@0.47.1
 busy-signal@2.0.0
+editorconfig@2.2.2
 ex-mode@0.18.0
 intentions@1.1.5
 language-babel@2.85.0
